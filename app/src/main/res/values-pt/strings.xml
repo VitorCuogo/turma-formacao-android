@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"TaskManager "</string>
+
+    <string name="hello_world">Olá Mundo!</string>
+    <string name="action_settings">Configurações</string>
+
+    <string name="lbl_login">Usuário</string>
+    <string name="lbl_password">Senha</string>
+    <string name="lbl_enter">ENTRAR</string>
+    <string name="msg_welcome">Seja bem vindo %s!</string>
+
+    <string name="lbl_weight">Peso</string>
+    <string name="lbl_height">Altura</string>
+    <string name="lbl_calculate">Calcular</string>
+    <string name="msg_reply">IMC: %s!</string>
+    <string name="lbl_Description">Descrição</string>
+    <string name="lbl_Name">Nome </string>
+    <string name="lbl_Save">Salvar</string>
+    <string name="lbl_add">Add</string>
+
+    <string name="msg_required">Campo obrigatório!</string>
+    <string name="msg_save_sucess">Registro salvo com sucesso!</string>
+</resources>

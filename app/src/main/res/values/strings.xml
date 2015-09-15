@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">"TaskManager "</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="lbl_login">Login</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_enter">LOGIN</string>
+
+    <string name="lbl_weight">Weight</string>
+    <string name="lbl_height">Height</string>
+    <string name="lbl_calculate">Calculate</string>
+
+    <string name="msg_reply">IMC: %s!</string>
+    <string name="msg_welcome">Welcome %s!</string>
+    <string name="lbl_Description">Description</string>
+    <string name="lbl_Name">Name</string>
+    <string name="lbl_Save">Save</string>
+    <string name="lbl_add">Add</string>
+
+    <string name="msg_required">Field required!</string>
+    <string name="msg_save_sucess">Save successful!</string>
+</resources>
