@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.io.Serializable;
+
 import br.com.cast.turmaformacao.taskmanager.R;
 import br.com.cast.turmaformacao.taskmanager.model.entities.Task;
 import br.com.cast.turmaformacao.taskmanager.model.services.TaskBusinessService;
@@ -14,6 +16,7 @@ import br.com.cast.turmaformacao.taskmanager.util.FormHelper;
 
 public class TaskFormActivity extends AppCompatActivity{
 
+    public static final String PARAM_TASK = "PARAM_TASK";
     private EditText editTextName;
     private EditText editTextDescription;
     private Button buttonSave;
@@ -32,7 +35,11 @@ public class TaskFormActivity extends AppCompatActivity{
     }
 
     private void initTask() {
-        this.task = new Task();
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            this.task = (Task) extras.getParcelable(PARAM_TASK);
+        }
+        this.task = task == null ? new Task() : this.task;
     }
 
     private void bindButtonSave() {
@@ -43,7 +50,7 @@ public class TaskFormActivity extends AppCompatActivity{
                 String requiredMessage = TaskFormActivity.this.getString(R.string.msg_required);
                 if(!FormHelper.requiredFields(requiredMessage, editTextName)){
                     bindTask();
-                    TaskBusinessService.getInstance().save(task);
+                    TaskBusinessService.save(task);
                     Toast.makeText(TaskFormActivity.this, R.string.msg_save_sucess, Toast.LENGTH_LONG).show();
                     TaskFormActivity.this.finish();
                 }
