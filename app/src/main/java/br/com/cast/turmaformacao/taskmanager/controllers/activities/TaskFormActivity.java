@@ -71,7 +71,7 @@ public class TaskFormActivity extends AppCompatActivity{
     }
 
     private void bindEditTextName() {
-        editTextName = (EditText) findViewById(R.id.editTextname);
+        editTextName = (EditText) findViewById(R.id.editTextName);
         editTextName.setText(task.getName() == null ? "" : task.getName());
     }
 }

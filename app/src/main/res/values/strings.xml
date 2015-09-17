@@ -31,4 +31,8 @@
 
     <string name="lbl_yes">Yes</string>
     <string name="lbl_no">No</string>
+
+    <string name="lbl_name">Name</string>
+    <string name="lbl_description">Description</string>
+    <string name="lbl_save">OK</string>
 </resources>
